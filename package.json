@@ -1,0 +1,24 @@
+{
+  "name": "react-hook-useform",
+  "version": "1.0.0",
+  "description": "A simple form validation hook for React JS applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaydhiman/react-hook-useform.git"
+  },
+  "keywords": [
+    "React hooks",
+    "useForm",
+    "react-hook-useform"
+  ],
+  "author": "Kay Dhiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaydhiman/react-hook-useform/issues"
+  },
+  "homepage": "https://github.com/Kaydhiman/react-hook-useform#readme"
+}
