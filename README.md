@@ -4,7 +4,7 @@ Validate your ReactJS input elements.
 
 # Installation
 
-`npm i react-hook-userform --save`
+`npm i @kaydhiman/react-hook-userform --save`
 
 # Usage
 Then import it in your React JS component and invoke the useForm hook. 
