@@ -10,7 +10,7 @@ export const patterns = {
 };
 
 export function useForm({ validations, initialValues = {} }) {
-  useDebugValue("useForm");
+  useDebugValue("@kaydhiman/react-hook-useform");
 
   if (!validations) {
     throw new Error("the option `validations` is required");

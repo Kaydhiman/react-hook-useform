@@ -1,6 +1,6 @@
 {
-  "name": "react-hook-useform",
-  "version": "1.0.0",
+  "name": "@kaydhiman/react-hook-useform",
+  "version": "1.0.1",
   "description": "A simple form validation hook for React JS applications.",
   "main": "index.js",
   "scripts": {

@@ -4,7 +4,7 @@ Validate your ReactJS input elements.
 
 # Installation
 
-`npm i react-hook-userform --save`
+`npm i @kaydhiman/react-hook-useform --save`
 
 # Usage
 Then import it in your React JS component and invoke the useForm hook. 
@@ -12,12 +12,15 @@ It will return a object `{ values, errors, bindField, isValid, setInitialValues 
 
 ```
 import React, { useEffect } from "react";
-import { useForm, patterns } from "react-hook-userform";
+import { useForm, patterns } from "@kaydhiman/react-hook-useform";
 
 export function Form() {
   const { values, errors, bindField, isValid, setInitialValues } = useForm({
-    email: { pattern: patterns.email, required: true },
-    password: { minLength: 6, required: true },
+      validations: {
+      email: { pattern: patterns.email, required: true },
+      password: { minLength: 6, required: true },
+    },
+    {}
   });
 
   useEffect(() => {
