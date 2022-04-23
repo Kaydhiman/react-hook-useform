@@ -153,11 +153,29 @@ export function useForm({ validations, initialValues = {} }) {
     return !hasErrors;
   }
 
+  function checkErrors() {
+    let errors = {};
+    Object.keys(validations).forEach((name) => {
+      errors = {
+        ...errors,
+        [name]: validateField(name, values[name]),
+      };
+    });
+
+    setErrors((state) => ({
+      ...state,
+      ...errors,
+    }));
+
+    return errors;
+  }
+
   return {
     values,
     errors,
     bindField,
     isValid,
     setInitialValues,
+    checkErrors,
   };
 }
