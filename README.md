@@ -93,12 +93,7 @@ export function Form() {
     e.preventDefault();
 
     // just invoke checkErrors function and that's it!
-    checkErrors();
-
-    // Then check errors object.
-    console.log(errors)
-
-    if(Object.keys(errors).length) {
+    if(checkErrors()) {
       return;
     }
 
