@@ -167,7 +167,7 @@ export function useForm({ validations, initialValues = {} }) {
       ...errors,
     }));
 
-    return errors;
+    return Object.values(errors).some(err => err === "");
   }
 
   return {

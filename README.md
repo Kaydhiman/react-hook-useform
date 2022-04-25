@@ -12,14 +12,14 @@ Validate your ReactJS input elements.
 # Basic Usage
 
 Import and invoke the useForm hook in your React JS component.
-It will return a object `{ values, errors, bindField, isValid, setInitialValues }`
+It will return a object `{ values, errors, bindField, isValid, setInitialValues, checkErrors }`
 
 ```
 import React, { useEffect } from "react";
 import { useForm, patterns } from "@kaydhiman/react-hook-useform";
 
 export function Form() {
-  const { values, errors, bindField, isValid, setInitialValues, checkErros } = useForm({
+  const { values, errors, bindField, isValid, setInitialValues, checkErrors } = useForm({
     validations: {
       email: {
         pattern: {
@@ -85,15 +85,15 @@ export function Form() {
   }, []);
 ```
 
-# checkErros Usage
+# checkErrors Usage
 
 ```
   // Before Submit form check if there is some errors...
     const formSubmitHandler = (e) => {
     e.preventDefault();
 
-    // just invoke checkErros function and that's it!
-    checkErros();
+    // just invoke checkErrors function and that's it!
+    checkErrors();
 
     // Then check errors object.
     console.log(errors)
@@ -122,4 +122,4 @@ useForm return a Object that contains following keys and values.
 | bindField | Function | bindField used for bind value and onChange event on input fields. |
 | isValid | Function | isValid used for checking if all binded fields are valid as per validations that we created in useForm hook. |
 | setInitialValues | Function | setInitialValues used to set initial values of input fields that bind with bindField. |
-| checkErros | Function | checkErros used for check if there is any error and it will return a object of errors. |
+| checkErrors | Function | checkErrors used for check if there is any error and it will return a object of errors. |
